@@ -1,3 +1,4 @@
+```html
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
@@ -6,37 +7,57 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>CONTOH TABEL</title>
+    <title>CONTOH FORM</title>
 </head>
 
 <body>
 
-    <table border="1" cellpadding="10" style="width:500px;">
-        <tr>
-            <th>No</th>
-            <th>Nama</th>
-            <th>Kelas</th>
-        </tr>
+    <h2>Formulir Pendaftaran</h2>
 
-        <tr>
-            <td>1</td>
-            <td>Nata</td>
-            <td>A</td>
-        </tr>
+    <form action="#" method="post">
 
-        <tr>
-            <td>2</td>
-            <td>Andi</td>
-            <td>B</td>
-        </tr>
+        <table border="1" cellpadding="10" style="width:500px;">
+            <tr>
+                <td>Nama</td>
+                <td>
+                    <input type="text" name="nama" />
+                </td>
+            </tr>
 
-        <tr>
-            <td>3</td>
-            <td>Sinta</td>
-            <td>A</td>
-        </tr>
-    </table>
+            <tr>
+                <td>Email</td>
+                <td>
+                    <input type="text" name="email" />
+                </td>
+            </tr>
+
+            <tr>
+                <td>Jenis Kelamin</td>
+                <td>
+                    <input type="radio" name="jk" value="Laki-laki" /> Laki-laki
+                    <br />
+                    <input type="radio" name="jk" value="Perempuan" /> Perempuan
+                </td>
+            </tr>
+
+            <tr>
+                <td>Alamat</td>
+                <td>
+                    <textarea name="alamat" rows="4" cols="30"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" style="text-align:center;">
+                    <input type="submit" value="Kirim" />
+                    <input type="reset" value="Reset" />
+                </td>
+            </tr>
+        </table>
+
+    </form>
 
 </body>
 
 </html>
+```
